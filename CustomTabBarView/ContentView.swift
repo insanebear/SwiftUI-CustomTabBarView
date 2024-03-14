@@ -8,14 +8,39 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var selectedTab: TabItem = .home
+    
+    var body: some View {
+        ZStack {
+            TabContentView(selectedTab: $selectedTab)
+            TabBarView(selectedTab: $selectedTab)
+        }
+    }
+}
+
+struct TabContentView: View {
+    @Binding var selectedTab: TabItem
+    
+    var body: some View {
+        switch selectedTab {
+        case .home:
+            HomeView()
+        case .my:
+            MyView()
+        case .log:
+            LogView()
+        }
+    }
+}
+
+struct TabBarView: View {
+    @Binding var selectedTab: TabItem
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Spacer()
+            TabBarFrame(selectedTab: $selectedTab)
         }
-        .padding()
     }
 }
 
