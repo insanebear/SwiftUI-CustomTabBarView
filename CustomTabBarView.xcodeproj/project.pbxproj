@@ -11,6 +11,12 @@
 		7B9A7D852BA335D40021B9B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A7D842BA335D40021B9B1 /* ContentView.swift */; };
 		7B9A7D872BA335D50021B9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9A7D862BA335D50021B9B1 /* Assets.xcassets */; };
 		7B9A7D8B2BA335D50021B9B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9A7D8A2BA335D50021B9B1 /* Preview Assets.xcassets */; };
+		7B9A7D922BA335F90021B9B1 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A7D912BA335F90021B9B1 /* TabView.swift */; };
+		7B9A7D942BA3361D0021B9B1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A7D932BA3361D0021B9B1 /* HomeView.swift */; };
+		7B9A7D962BA336580021B9B1 /* MyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A7D952BA336580021B9B1 /* MyView.swift */; };
+		7B9A7D982BA3367B0021B9B1 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A7D972BA3367B0021B9B1 /* LogView.swift */; };
+		7B9A7D9B2BA336AD0021B9B1 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A7D9A2BA336AD0021B9B1 /* TabItem.swift */; };
+		7B9A7D9D2BA337F40021B9B1 /* TabBarFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9A7D9C2BA337F40021B9B1 /* TabBarFrame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		7B9A7D862BA335D50021B9B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B9A7D882BA335D50021B9B1 /* CustomTabBarView.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomTabBarView.entitlements; sourceTree = "<group>"; };
 		7B9A7D8A2BA335D50021B9B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7B9A7D912BA335F90021B9B1 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		7B9A7D932BA3361D0021B9B1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7B9A7D952BA336580021B9B1 /* MyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyView.swift; sourceTree = "<group>"; };
+		7B9A7D972BA3367B0021B9B1 /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
+		7B9A7D9A2BA336AD0021B9B1 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		7B9A7D9C2BA337F40021B9B1 /* TabBarFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFrame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,10 @@
 			children = (
 				7B9A7D822BA335D40021B9B1 /* CustomTabBarViewApp.swift */,
 				7B9A7D842BA335D40021B9B1 /* ContentView.swift */,
+				7B9A7D932BA3361D0021B9B1 /* HomeView.swift */,
+				7B9A7D952BA336580021B9B1 /* MyView.swift */,
+				7B9A7D972BA3367B0021B9B1 /* LogView.swift */,
+				7B9A7D992BA336900021B9B1 /* TabBarView */,
 				7B9A7D862BA335D50021B9B1 /* Assets.xcassets */,
 				7B9A7D882BA335D50021B9B1 /* CustomTabBarView.entitlements */,
 				7B9A7D892BA335D50021B9B1 /* Preview Content */,
@@ -67,6 +83,16 @@
 				7B9A7D8A2BA335D50021B9B1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7B9A7D992BA336900021B9B1 /* TabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				7B9A7D9C2BA337F40021B9B1 /* TabBarFrame.swift */,
+				7B9A7D912BA335F90021B9B1 /* TabView.swift */,
+				7B9A7D9A2BA336AD0021B9B1 /* TabItem.swift */,
+			);
+			path = TabBarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +166,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B9A7D852BA335D40021B9B1 /* ContentView.swift in Sources */,
+				7B9A7D982BA3367B0021B9B1 /* LogView.swift in Sources */,
+				7B9A7D942BA3361D0021B9B1 /* HomeView.swift in Sources */,
+				7B9A7D9D2BA337F40021B9B1 /* TabBarFrame.swift in Sources */,
+				7B9A7D9B2BA336AD0021B9B1 /* TabItem.swift in Sources */,
+				7B9A7D962BA336580021B9B1 /* MyView.swift in Sources */,
+				7B9A7D922BA335F90021B9B1 /* TabView.swift in Sources */,
 				7B9A7D832BA335D40021B9B1 /* CustomTabBarViewApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
